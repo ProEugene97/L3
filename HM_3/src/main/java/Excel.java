@@ -71,10 +71,10 @@ public class Excel {
     private static void write_surname(Data data) {
         int number = randBetween(1, 30);
         if (data.get_sex() == "М") {
-            String surname = read_file("/src/main/resources/MaleSurname.txt", number);
+            String surname = read_file("src/main/resources/MaleSurname.txt", number);
             data.set_surname(surname);
         } else {
-            String surname = read_file("/src/main/resources/FemaleSurname.txt", number);
+            String surname = read_file("src/main/resources/FemaleSurname.txt", number);
             data.set_surname(surname);
         }
     }
